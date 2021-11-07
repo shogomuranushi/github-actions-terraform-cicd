@@ -9,3 +9,5 @@ terraform {
 }
 
 resource "random_pet" "sg" {}
+
+resource "random_pet" "cg" {}
