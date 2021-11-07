@@ -13,3 +13,5 @@ resource "random_pet" "sg" {}
 resource "random_pet" "cg" {}
 
 resource "random_pet" "eg" {}
+
+resource "random_pet" "fg" {}
