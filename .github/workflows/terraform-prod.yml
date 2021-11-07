@@ -1,12 +1,12 @@
 name: "Terraform Prod"
 
 on:
-  push:
+  pull_request:
     branches:
       - master
     paths:
       - 'prod/**'
-  pull_request:
+    types: [opened, synchronize, closed]
 
 jobs:
   terraform:
