@@ -29,10 +29,10 @@ jobs:
 
       - name: Terraform Plan
         if: ((github.event.action == 'labeled') && (github.event.label.name == 'plan:dev'))
-        id: init
+        id: plan
         run: terraform plan
 
       - name: Terraform Apply
         if: ((github.event.action == 'labeled') && (github.event.label.name == 'apply:dev'))
-        id: init
+        id: apply
         run: terraform apply
