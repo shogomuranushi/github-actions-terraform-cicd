@@ -9,9 +9,3 @@ terraform {
 }
 
 resource "random_pet" "ag" {}
-
-resource "random_pet" "bg" {}
-
-resource "random_pet" "cg" {}
-
-resource "random_pet" "dg" {}
