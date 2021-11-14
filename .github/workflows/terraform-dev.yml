@@ -24,6 +24,15 @@ jobs:
         run: terraform fmt -check
 
       - name: Terraform Init
-        if: ((github.event.action == 'labeled') && (github.event.label.name == 'init:dev'))
         id: init
         run: terraform init
+
+      - name: Terraform Plan
+        if: ((github.event.action == 'labeled') && (github.event.label.name == 'plan:dev'))
+        id: init
+        run: terraform plan
+
+      - name: Terraform Apply
+        if: ((github.event.action == 'labeled') && (github.event.label.name == 'apply:dev'))
+        id: init
+        run: terraform apply
