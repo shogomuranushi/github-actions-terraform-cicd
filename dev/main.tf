@@ -11,5 +11,3 @@ terraform {
 resource "random_pet" "sg" {}
 
 resource "random_pet" "bg" {}
-
-resource "random_pet" "dg" {}
