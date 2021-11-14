@@ -8,6 +8,8 @@ terraform {
   required_version = ">= 0.14"
 }
 
-resource "random_pet" "sg" {}
+resource "random_pet" "ag" {}
 
 resource "random_pet" "bg" {}
+
+resource "random_pet" "cg" {}
